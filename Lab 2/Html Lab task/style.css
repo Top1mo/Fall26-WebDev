@@ -1,33 +1,102 @@
+/* Modern box-sizing reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    background-color: #f2f2f2;
-    color: #111;
-    font-family: Arial, sans-serif;
+    background-color: #f7f9fa;
+    color: #222;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     line-height: 1.6;
 }
 
 header {
-    padding: 30px;
+    padding: 40px 20px;
     background-color: #111;
-    color: white;
+    color: #fff;
     text-align: center;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+    color: #aaa;
+    font-size: 1.1rem;
 }
 
 main {
     max-width: 800px;
-    margin: 30px auto;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
 section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
+    margin-bottom: 28px;
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #f0f2f5;
+}
+
+/* Individual project cards inside #projects */
+.project-card {
+    padding: 16px 0;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.project-card:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.project-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.15rem;
+    color: #0f172a;
+}
+
+.project-card p {
+    margin: 0;
+    color: #475569;
+}
+
+/* Contact information and links */
+address {
+    font-style: normal;
+}
+
+address p {
+    margin: 6px 0;
+}
+
+a {
+    color: #0969da;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 footer {
-    padding: 15px;
-    color: #555;
+    padding: 24px 20px;
+    color: #666;
     text-align: center;
+    font-size: 0.9rem;
 }

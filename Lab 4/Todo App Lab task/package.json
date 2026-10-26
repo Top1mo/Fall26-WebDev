@@ -1,0 +1,11 @@
+{
+  "name": "todo-app-lab-task",
+  "version": "1.0.0",
+  "description": "Todo App - CSE343 Lab 4 / Section 4",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

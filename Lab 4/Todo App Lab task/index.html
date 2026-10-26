@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - CSE343 Section 4 / Lab 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-wrapper">
+        <section class="todo-card" aria-label="Todo Application">
+            <!-- App Header -->
+            <header class="card-header">
+                <h1 class="card-title">Todo App</h1>
+            </header>
+
+            <!-- Input Row -->
+            <form id="todo-form" class="todo-form" autocomplete="off">
+                <input 
+                    type="text" 
+                    id="todo-input" 
+                    class="todo-input" 
+                    placeholder="What needs doing?" 
+                    aria-label="New todo input"
+                    required
+                />
+                <button type="submit" id="add-btn" class="btn btn-add">Add</button>
+            </form>
+
+            <!-- Tip & Filters Row -->
+            <div class="meta-row">
+                <span class="tip-text">Tip: double-click a todo to edit. Press Enter to save.</span>
+                <nav class="filters" aria-label="Filter todos">
+                    <button type="button" class="filter-btn active" data-filter="all">All</button>
+                    <button type="button" class="filter-btn" data-filter="active">Active</button>
+                    <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+                </nav>
+            </div>
+
+            <!-- Todo Items List -->
+            <ul id="todo-list" class="todo-list" aria-live="polite">
+                <!-- Dynamically populated by app.js (compiled from app.ts) -->
+            </ul>
+
+            <!-- Footer / Status Bar -->
+            <footer class="card-footer">
+                <span id="items-left" class="items-left">2 items left</span>
+                <div class="footer-actions">
+                    <button type="button" id="clear-completed-btn" class="btn btn-secondary">Clear completed</button>
+                    <button type="button" id="clear-all-btn" class="btn btn-secondary">Clear all</button>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <!-- Transpiled TypeScript output (app.js) loaded as external JS -->
+    <script src="app.js"></script>
+</body>
+</html>
